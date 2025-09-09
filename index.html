@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Steven Voix-Off</title>
+  <!-- Import police calligraphique -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background-color: #f9fff9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 2rem;
+      border-radius: 15px;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #4CAF50;
+    }
+
+    .profile audio {
+      margin: 1rem 0;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .bio {
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #4CAF50;
+      margin-bottom: 1.5rem;
+    }
+
+    .demos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .demo-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+
+    .demo-card h3 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .demo-card audio {
+      width: 100%;
+    }
+
+    .contact {
+      background-color: #4CAF50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      background: white;
+      color: #4CAF50;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #333;
+      color: white;
+    }
+
+    .signature {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.8rem;
+      color: #4CAF50;
+      margin: 2rem 1rem;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <h1>M. Steven Voix-Off</h1>
+    <p>Donner vie aux mots par une voix unique</p>
+  </header>
+
+  <!-- Profil + Carte vocale -->
+  <section class="profile">
+    <!-- Espace pour ta photo -->
+    <img src="images/vophoto_2025-09-09_01-41-32.jpg" alt="Photo de M. Steven Voix-Off">
+    
+    <!-- Carte de visite vocale -->
+    <audio controls>
+      <source src="audios/CArte visite Vocale sans effets_mixage final.wav" type="audio/mpeg">
+      Votre navigateur ne supporte pas l’audio.
+    </audio>
+
+    <!-- Bio -->
+    <div class="bio">
+      <p><em>Je suis M. Steven, passionné par l'art de faire résonner des idées en apportant une touche d'originalité à tous les contenus où je prête ma voix.</em></p>
+    </div>
+  </section>
+
+  <!-- Démos -->
+  <section class="section">
+    <h2>🎤 Mes Démos</h2>
+    <div class="demos">
+      <div class="demo-card"><h3>Publicité</h3><audio controls><source src="audios/pub tf12.mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Documentaire</h3><audio controls><source src="audios/Documentaire (La lune).mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Film institutionnel</h3><audio controls><source src="audios/Film d'entreprise(bgfi).mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Billboard</h3><audio controls><source src="audios/billboard tf1.mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Habillage d'antenne 1</h3><audio controls><source src="audios/Habillage d'antenne canal+.mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Habillage d'antenne 2</h3><audio controls><source src="audios/Reportage tf1.mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Pub en anglais</h3><audio controls><source src="audios/Pub anglais (Casabelga).mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Pub en espagnol</h3><audio controls><source src="audios/Pub espa (Nescafé).mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Bande annonce</h3><audio controls><source src="audios/BA CLUB DES ELITES .mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>Spot publicitaire</h3><audio controls><source src="audios/Spot Festi MEKA (2) - Copie.mp3" type="audio/mpeg"></audio></div>
+      <div class="demo-card"><h3>SVI</h3><audio controls><source src="audios/SVI REpondeur effets mixage final.wav" type="audio/mpeg"></audio></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>📩 Me Contacter</h2>
+    <p>Retrouvez-moi sur mes plateformes :</p>
+    <div class="social-links">
+      <a href="https://wa.me/237622051500" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/profile.php?id=61556526542222" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/m.stevenvoixoff?igsh=YzljYTk1ODg3Zg==" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@m..steven.voixoff?_t=ZM-8y9yfdUepLa&_r=" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <!-- Signature -->
+  <div class="signature">
+    « Avec ma voix, chaque mot résonne avec impact »
+  </div>
+
+  <footer>
+    © 2025 M. Steven Voix-Off | Tous droits réservés
+  </footer>
+
+</body>
+</html>
